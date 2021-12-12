@@ -1,7 +1,5 @@
 package ua.edu.ucu.collections.immutable;
 
-import java.util.Arrays;
-import java.util.Objects;
 
 public final class ImmutableArrayList implements ImmutableList {
     private Object[] array = new Object[1];
@@ -11,7 +9,7 @@ public final class ImmutableArrayList implements ImmutableList {
     public ImmutableArrayList(Object[] elements) {
         int size = elements.length;
         this.n = size;
-        this.capacity = 2*size;
+        this.capacity = 2 * size;
         this.array = new Object[capacity];
 
         int i = 0;
@@ -128,11 +126,13 @@ public final class ImmutableArrayList implements ImmutableList {
 
     @Override
     public ImmutableList addAll(int index, Object[] c) {
+        int i = index;
+
         ImmutableList immutableList = this.copy();
 
         for (Object el : c) {
-            this.add(index, c);
-            index++;
+            this.add(i, c);
+            i++;
         }
 
         return immutableList;
@@ -198,7 +198,7 @@ public final class ImmutableArrayList implements ImmutableList {
 
     @Override
     public boolean isEmpty() {
-        return n==0;
+        return n == 0;
     }
 
     @Override

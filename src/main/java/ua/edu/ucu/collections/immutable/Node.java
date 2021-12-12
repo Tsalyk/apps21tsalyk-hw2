@@ -49,8 +49,8 @@ public class Node {
         return idx;
     }
 
-    public void setIdx(int idx) {
-        this.idx = idx;
+    public void setIdx(int index) {
+        this.idx = index;
     }
 }
 

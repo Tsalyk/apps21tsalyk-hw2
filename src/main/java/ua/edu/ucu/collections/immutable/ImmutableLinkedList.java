@@ -151,12 +151,14 @@ public final class ImmutableLinkedList implements ImmutableList {
 
     @Override
     public ImmutableList addAll(int index, Object[] c) {
+        int i = index;
+
         ImmutableList immutableList = this.copy();
 
         for (Object el : c) {
             Node newNode = new Node(el, index);
-            this.add(index, newNode);
-            index++;
+            this.add(i, newNode);
+            i++;
         }
 
         return immutableList;
