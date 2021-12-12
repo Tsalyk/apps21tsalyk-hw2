@@ -3,8 +3,8 @@ package ua.edu.ucu.collections.immutable;
 
 public final class ImmutableArrayList implements ImmutableList {
     private Object[] array = new Object[1];
-    private int n=0;
-    private int capacity=1;
+    private int n = 0;
+    private int capacity = 1;
 
     public ImmutableArrayList(Object[] elements) {
         int size = elements.length;

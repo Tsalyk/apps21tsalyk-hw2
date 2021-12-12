@@ -111,7 +111,7 @@ public final class ImmutableLinkedList implements ImmutableList {
                 newNode.setPrevious(head);
                 tail = newNode;
                 return immutableList;
-            } else if (tail == null & index == 0){
+            } else if (tail == null & index == 0) {
                 tail = node;
                 newNode.setNext(node);
                 head = node;
