@@ -2,7 +2,7 @@ package ua.edu.ucu.collections.immutable;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ImmutableLinkedListTest {
+public class ImmutableLinkedListTest {
     ImmutableLinkedList immutableLinkedList;
 
     @org.junit.jupiter.api.BeforeEach
